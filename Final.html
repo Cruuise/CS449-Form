@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <style>
+        form :focus:required:invalid {
+          border-color: #bf3f3d;
+        }
+  </style>
+</head>
+<body class="container">
+    <header><h1>Amtrak Signup</h1></header>
+    <section>
+        <div class="panel panel-primary">
+            <div class="panel body">
+                <form data-coffee-order="form">
+                    <div class="form-group">
+                        <input class="form-control" id="fname" autofocus required pattern=[a-zA-Z\s]+ placeholder="First">
+                        <input class="form-control" id="uname" autofocus pattern=[a-zA-Z\s]+ placeholder="Middle">
+                        <input class="form-control" id="cname" autofocus required pattern=[a-zA-Z\s]+ placeholder="Last">
+
+                    </div> <!-- form-group -->
+                    <br>
+                    <div class="form-group">
+                        <label for="emailInput">Email </label>
+                        <input class="form-control" type="email" name="emailAddress" id="emailInput" required placeholder="emaild@example.com">   
+                    </div> <!-- form-group -->
+                    <br>
+                    <div class="form-group">
+                        <label for="flavorShot">Country Code</label>
+                        <select id="flavorShot" class="form-control" name="flavor">
+                          <option value="" selected>None</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4 </option>
+                        </select>
+                      </div>
+                    <input class="form-control" id="phone#" autofocus required placeholder="(714) 000-0000">
+                    <br>
+                    <label for="size"> Alert Me</label>
+                    <div class="radio"><label><input type="radio" name="size">Text</label></div>
+                    <div class="radio"><label><input type="radio" name="size" checked>e-Mail</label></div>
+                      
+                    <button type="submit" class="btn btn-outline-primary">Sign-up</button>
+                </form>
+            </div> <!-- panel body -->
+        </div> <!-- panel panel-primary -->
+
+    </section>
+  </body>
+</body>
+</html>
